@@ -1,0 +1,22 @@
+.login_box_title{
+    font-family: 'Pacifico', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    color: rgb(137, 188, 255);
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+    position:absolute;
+    top: 22%;
+    left: 48%;
+    animation-name: login_box_title_an ;
+    animation-duration: .5s;
+    font-size: 150%;
+}
+
+@keyframes login_box_title_an {
+    0%{
+        font-size: 0%;
+    }
+    100%{
+        font-size: 210%;
+    }
+}

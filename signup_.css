@@ -1,0 +1,104 @@
+body{
+    background: url("web_media/sign_up_img.jpg");
+    background-size:110%;
+    background-attachment: fixed;
+    background-blend-mode:overlay;
+}
+
+.title{
+    font-family: 'Lobster', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(240, 248, 255, 1);
+    font-size: 500%;
+    text-shadow:2px 2px rgb(23, 224, 224);
+    position: absolute;
+    top: 0%;
+    left: 43%;
+    transition-duration: 500ms;
+    animation-name: title_an,title_color;
+    animation-duration: 1.5s,10s;
+    animation-iteration-count: 1,infinite;
+    
+}
+
+.title:hover{
+    font-size: 520%;
+    color: rgb(181, 243, 139);
+}
+
+@keyframes title_an {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0%;
+    }
+   
+}
+
+@keyframes title_color {
+    0%{
+        text-shadow:2px 2px rgb(23, 224, 224);
+    }
+    25%{
+        text-shadow:2px 2px rgb(23, 224, 33);
+    }
+    50%{
+        text-shadow:2px 2px rgb(224, 154, 23);
+    }
+    75%{
+        text-shadow:2px 2px rgb(224, 23, 23);
+    }
+    100%{
+        text-shadow:2px 2px rgb(23, 224, 224);
+    }
+}
+
+.login_box{
+    background-color: rgba(199, 199, 199,0.7);
+    translate: 100%;
+    width: 40%;
+    height: 60%;
+    padding: 2%;
+    border-radius: 5%;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+}
+
+.login_box_title{
+    font-family: 'Pacifico', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(137, 188, 255);
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+    position:absolute;
+    top: 22%;
+    left: 48%;
+    animation-name: login_box_title_an ;
+    animation-duration: .5s;
+    font-size: 210%;
+}
+
+@keyframes login_box_title_an {
+    0%{
+        font-size: 0%;
+    }
+    100%{
+        font-size: 210%;
+    }
+}
+
+.logoo{
+    width: 8%;
+    height: auto;
+    padding: 1%;
+    transition-duration: 1s;
+}
+
+.logoo:hover{
+    opacity: 50%;
+}
+
+#sign_up,#log_in{
+    margin-right: 5%;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="user1_.css">
+
+    
+
+    <title>Artistic</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font" id="header1">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">-->
+               
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </a>
+          <img src="web_media/logo1.jpg" alt="" class="logo">
+          <h1 class="title">Artistic</h1>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" id="nav_bar">
+            <a class="mr-5 hover:text-gray-900" href="user1.html" id='home_btn' title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                </svg>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="mr-5 hover:text-gray-900" href="javascript:log_out()" id="log_in_btn" title="Log-Out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="mr-5 hover:text-gray-900" id="user_name" title="Sign-Up" href="sign_up.html">
+            </a>
+            <a class="user_name_display" id="user_name_display" href="user_profile.html"></a>
+          </nav>
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          
+        </div>
+    </header>
+    <hr>
+    <br>
+    <center><button class="bg-green-500 hover:bg-green-400 text-white font-bold py-0.5 px-4 rounded" onclick="window.location.href='upload.html'">Upload</button></center>
+    <section class="all_files">
+        <section class="text-gray-600 body-font overflow-y-auto" id="all_file">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap w-full mb-20">
+                <div class="flex flex-wrap -m-4" id='elements_all'>
+                </div>
+                </div>
+        </section>
+  
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore-compat.js"></script>    
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage-compat.js"></script>    
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="data.js"></script>
+</html>

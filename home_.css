@@ -1,0 +1,222 @@
+html, body {margin: 0; width:100%; height: 100%; overflow: hidden}
+
+*{
+    margin: 0;
+    padding:0;
+    background-color: #1C1C1C;
+    font-size:120%;
+}
+
+body{
+    background-color: #1C1C1C;
+}
+
+.header1{
+    animation: header 1s ease-in-out;
+}
+
+.logo{
+    cursor: pointer;
+    width: 8%;
+    height: auto;
+    transition-duration: 1s;
+}
+
+.logo:hover{
+    opacity: 50%;
+}
+
+.nav_bar svg{
+    position: relative;
+    padding: 100px;
+}
+
+.logo{
+    cursor: pointer;
+    width: 8%;
+    height: auto;
+    transition-duration: 1s;
+}
+
+.title{
+    font-family: 'Lobster', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(240, 248, 255, 1);
+    font-size: 250%;
+    text-shadow:2px 2px rgb(23, 224, 224);
+    position: absolute;
+    top: 0%;
+    left: 43%;
+    transition-duration: 500ms;
+    animation-name: title_an,title_color;
+    animation-duration: 1.5s,10s;
+    animation-iteration-count: 1,infinite;
+    
+}
+
+.title:hover{
+    font-size: 270%;
+    color: rgb(181, 243, 139);
+}
+
+@keyframes title_an {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0%;
+    }
+   
+}
+
+@keyframes title_color {
+    0%{
+        text-shadow:2px 2px rgb(23, 224, 224);
+    }
+    25%{
+        text-shadow:2px 2px rgb(23, 224, 33);
+    }
+    50%{
+        text-shadow:2px 2px rgb(224, 154, 23);
+    }
+    75%{
+        text-shadow:2px 2px rgb(224, 23, 23);
+    }
+    100%{
+        text-shadow:2px 2px rgb(23, 224, 224);
+    }
+}
+
+
+.first{
+    padding: 1%;
+    
+    animation: first_an 1s 0.5s ease-in-out;
+    background-color: #1C1C1C;
+}
+
+.backdrop1{
+    background-image: url("web_media/login_page_img3.jpg");
+    width: auto;
+    height: 150px;
+    background-position: center;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-color: #1C1C1C;
+}
+
+.art_title{
+    background: none;
+    font-family: 'Lobster', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(89, 177, 255);
+}
+
+.art_deets{
+    background: none;  
+}
+
+
+
+.backdrop1:hover{
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: none;
+    color:rgb(212, 80, 4);
+}
+
+@keyframes first_an {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.second{
+    padding: 1%;
+    animation: second_an 1s 0.5s ease-in-out ;
+}
+
+.backdrop2{
+    background-image: url("web_media/music_title_img.jpg");
+    width: auto;
+    height: 150px;
+    background-position:center;
+    background-size: 50%;
+    transition: ease-in-out;
+    transition-duration: 0.5s; 
+}
+
+.backdrop2:hover{
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    color: rgb(21, 161, 3);
+}
+
+.music_title{
+    background: none;
+    font-family: 'Lobster', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(255, 183, 89);
+}
+
+@keyframes second_an {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.third{
+    padding: 1%;
+    animation: third_an 1s 0.5s ease-in-out ;
+}
+
+.backdrop3{
+    background-image: url("web_media/other_title_img.jpg");
+    width: auto;
+    height: 150px;
+    background-position:center;
+    background-size: 50%;
+    transition: ease-in-out;
+    transition-duration: 0.5s; 
+}
+
+.backdrop3:hover{
+    width: 100%;
+    height: 240px;
+    color: rgb(27, 143, 245);
+}
+
+@keyframes third_an {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.others_title{
+    background: none;
+    font-family: 'Lobster', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(62, 255, 44);
+}
+
+.copyright{
+    display: inline-block;
+    background: #1C1C1C;
+    width: 50%;
+    height: 50%;
+    padding-left: 85%;
+}
+
+.clock{
+    align-items: center;
+}
